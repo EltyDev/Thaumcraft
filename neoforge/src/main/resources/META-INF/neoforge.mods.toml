@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "thaumcraft"
+version = "${version}"
+displayName = "Thaumcraft"
+authors = ""
+description = '''
+
+'''
+#logoFile = ""
+
+[[dependencies.thaumcraft]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.thaumcraft]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.10,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.thaumcraft]]
+modId = "architectury"
+type = "required"
+versionRange = "[18.0.6,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "thaumcraft.mixins.json"
