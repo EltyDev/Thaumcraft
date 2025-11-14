@@ -8,6 +8,8 @@ import net.minecraft.resources.ResourceLocation;
 
 import java.util.Collections;
 
+
+//TODO Rework for use codec instead of RegistryFriendlyByteBuf
 public abstract class NetworkPacket  {
 
     public NetworkPacket() {}

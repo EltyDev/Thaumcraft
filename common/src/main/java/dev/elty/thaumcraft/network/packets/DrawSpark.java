@@ -5,7 +5,6 @@ import dev.elty.thaumcraft.network.NetworkPacket;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.RegistryFriendlyByteBuf;
-import net.minecraft.network.codec.StreamCodec;
 
 public class DrawSpark extends NetworkPacket {
 
@@ -26,12 +25,8 @@ public class DrawSpark extends NetworkPacket {
         return buf;
     }
 
-    public StreamCodec<? super RegistryFriendlyByteBuf, NetworkPacket> codec() {
-
-    }
-
     @Override
     public void handle(NetworkManager.PacketContext ctx) {
-        System.out.println("SAlut");
+        //TODO Create visual for transmutation crafting
     }
 }

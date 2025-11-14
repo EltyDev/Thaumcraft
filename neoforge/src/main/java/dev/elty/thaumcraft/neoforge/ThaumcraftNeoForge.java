@@ -8,8 +8,6 @@ import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 @Mod(Thaumcraft.MOD_ID)
 public final class ThaumcraftNeoForge {
 
-    public static PayloadRegistrar NETWORK;
-
     public ThaumcraftNeoForge(IEventBus bus) {
         Thaumcraft.init();
     }
