@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "thaumcraft",
+  "version": "${version}",
+  "name": "Thaumcraft",
+  "description": "",
+  "authors": [
+    ""
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/thaumcraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.elty.thaumcraft.fabric.ThaumcraftFabric"
+    ],
+    "client": [
+      "dev.elty.thaumcraft.fabric.client.ThaumcraftFabricClient"
+    ]
+  },
+  "mixins": [
+    "thaumcraft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "~1.21.10",
+    "java": ">=21",
+    "architectury": ">=18.0.6",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
