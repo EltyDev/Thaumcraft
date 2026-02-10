@@ -22,11 +22,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
+import net.minecraft.world.item.crafting.display.RecipeDisplay;
+import net.minecraft.world.item.crafting.display.SlotDisplay;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 
+import java.util.List;
 import java.util.Optional;
 
 public class TransmutationRecipe implements Recipe<TransmutationRecipeInput> {
@@ -92,6 +95,22 @@ public class TransmutationRecipe implements Recipe<TransmutationRecipeInput> {
     @Override
     public PlacementInfo placementInfo() {
         return PlacementInfo.NOT_PLACEABLE;
+    }
+
+    @Override
+    public boolean isSpecial() {
+        return true;
+    }
+
+    @Override
+    public List<RecipeDisplay> display() {
+        return List.of(
+                new TransmutationRecipeDisplay(
+                        this.usedItem.display(),
+                        this.usedBlock.display(),
+                        new SlotDisplay.ItemSlotDisplay(this.result.getItem())
+                )
+        );
     }
 
     @Override

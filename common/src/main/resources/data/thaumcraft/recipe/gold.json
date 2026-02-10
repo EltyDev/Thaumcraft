@@ -1,7 +1,7 @@
 {
   "type": "thaumcraft:transmutation_recipe",
   "drop": true,
-  "input": "minecraft:stick",
+  "input": "#c:rods",
   "target": "minecraft:diamond_block",
   "result": {
     "id": "minecraft:gold_block",

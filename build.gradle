@@ -47,7 +47,7 @@ subprojects {
         minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
         mappings loom.officialMojangMappings()
         if (isFabric) {
-            modImplementation "curse.maven:advanced-xray-fabric-edition-444663:7106025"
+            modRuntimeOnly "curse.maven:advanced-xray-fabric-edition-444663:7106025"
         }
     }
 

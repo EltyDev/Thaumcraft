@@ -1,13 +1,11 @@
 package dev.elty.thaumcraft.item;
 
 import dev.architectury.registry.registries.DeferredRegister;
-import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import dev.elty.thaumcraft.Thaumcraft;
 import dev.elty.thaumcraft.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.ArrowItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

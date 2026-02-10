@@ -8,6 +8,7 @@ public final class ThaumcraftNeoForge {
 
     public ThaumcraftNeoForge() {
         Thaumcraft.init();
+
     }
 }
 
